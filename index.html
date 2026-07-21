@@ -96,7 +96,9 @@
 
         <!-- Progress -->
         <div class="progress-container">
-            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
             <span class="progress-time" id="progressTime">0:00</span>
         </div>
 
@@ -116,6 +118,12 @@
         </div>
 
     </div>
+
+    <!-- MUSIC USING VIDEO TAG - FOR MP4 SUPPORT -->
+    <video id="bgMusic" preload="auto" style="display:none;">
+        <source src="music/birthday.mp4" type="video/mp4">
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </video>
 
     <script src="script.js"></script>
 </body>
