@@ -3,13 +3,13 @@
 // ================================================================
 
 var PHOTOS = [
-    "./assets/photos/photo1.jpeg",
-    "./assets/photos/photo2.jpeg",
-    "./assets/photos/photo3.jpeg",
-    "./assets/photos/photo4.jpeg",
-    "./assets/photos/photo5.jpeg",
-    "./assets/photos/photo6.jpeg",
-    "./assets/photos/photo7.jpeg"
+    "photos/photo1.jpeg",
+    "photos/photo2.jpeg",
+    "photos/photo3.jpeg",
+    "photos/photo4.jpeg",
+    "photos/photo5.jpeg",
+    "photos/photo6.jpeg",
+    "photos/photo7.jpeg"
 ];
 
 var CAPTIONS = [
