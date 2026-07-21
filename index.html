@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Kruthi!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- LOADING SCREEN -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-cake">🎂</div>
+            <h2 class="loading-text">Preparing your surprise...</h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <p class="loading-sub">Please wait ✨</p>
+        </div>
+    </div>
+
+    <!-- CLICK TO START -->
+    <div id="startScreen" class="start-screen hidden">
+        <div class="start-content">
+            <div class="start-emoji">🎂</div>
+            <h1 class="start-title">You have a<br>Birthday Surprise!</h1>
+            <p class="start-sub">From someone very special 💖</p>
+            <button class="start-play-btn" id="startPlayBtn">
+                <span class="btn-icon">▶</span>
+                <span>Open Your Surprise</span>
+            </button>
+            <p class="start-hint">🔊 Turn up your volume!</p>
+        </div>
+        <div class="start-floats" id="startFloats"></div>
+    </div>
+
+    <!-- PLAYER SCREEN -->
+    <div id="playerScreen" class="player-screen hidden">
+
+        <canvas id="particleCanvas"></canvas>
+        <div id="floatingElements" class="floating-elements"></div>
+
+        <div class="slideshow-container">
+
+            <!-- INTRO -->
+            <div id="introScreen" class="intro-screen hidden">
+                <div class="intro-content">
+                    <div class="sparkle-border">
+                        <div class="intro-top-emoji">🎉🎂🎉</div>
+                        <h1 class="intro-title">Happy Birthday</h1>
+                        <h2 class="intro-name">Kruthi 💋😘❤️</h2>
+                        <div class="intro-hearts">💖✨🎂✨💖</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHOTO DISPLAY -->
+            <div id="photoDisplay" class="photo-display hidden">
+                <div class="photo-frame" id="photoFrame">
+                    <img id="currentPhoto" src="" alt="Birthday Photo">
+                    <div class="photo-overlay"></div>
+                    <div class="corner tl">✨</div>
+                    <div class="corner tr">✨</div>
+                    <div class="corner bl">💖</div>
+                    <div class="corner br">💖</div>
+                </div>
+                <div class="photo-caption" id="photoCaption"></div>
+                <div class="photo-number" id="photoNumber"></div>
+            </div>
+
+            <!-- OUTRO -->
+            <div id="outroScreen" class="outro-screen hidden">
+                <div class="outro-content">
+                    <div class="outro-top">🎊🎈🎂🎈🎊</div>
+                    <h1 class="outro-title">Happy Birthday!</h1>
+                    <h2 class="outro-name">Kruthi! 💋😘❤️</h2>
+                    <p class="outro-message">
+                        Wishing you the most amazing birthday ever!<br>
+                        You deserve all the happiness in the world!<br>
+                        May all your dreams come true! 💖🎉<br>
+                        You are the most special person! 💋😘
+                    </p>
+                    <div class="outro-hearts">
+                        <span>💖</span><span>🎂</span><span>🥳</span><span>🎁</span><span>💖</span>
+                    </div>
+                    <p class="outro-from">With all my love ❤️😘💋</p>
+                    <button class="replay-btn" id="replayBtn">
+                        🔄 Watch Again
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <span class="progress-time" id="progressTime">0:00</span>
+        </div>
+
+        <!-- Visualizer -->
+        <div class="visualizer" id="visualizer"></div>
+
+        <!-- Controls -->
+        <div class="controls" id="controls">
+            <button class="control-btn" id="playPauseBtn" title="Play/Pause">
+                <span id="playIcon">⏸️</span>
+            </button>
+            <button class="control-btn" id="restartBtn" title="Restart">🔄</button>
+            <button class="control-btn" id="muteBtn" title="Mute">
+                <span id="muteIcon">🔊</span>
+            </button>
+            <button class="control-btn" id="fullscreenBtn" title="Fullscreen">⛶</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
